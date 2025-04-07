@@ -23,13 +23,13 @@ export const registerMockInterceptor: HttpInterceptorFn = (req, next) => {
     let usersDatabase=inject(ProductStateManegmentService)
     let valid:boolean=verifyEmailUnicity(usersDatabase.newusersDatabase,data.email)
     if(valid){
-      const newUser={id:22,...data}
+      const newUser={id:usersDatabase.addUserId(),...data}
       usersDatabase.newusersDatabase.users.push(newUser)
 
 
       return of(new HttpResponse<any>({ status:200,
         body:{
-          accessToken:"ya lahzimya bnin",
+          accessToken:"2345",
           refreshToken:"12345"
         }
       }))
