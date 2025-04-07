@@ -1,0 +1,43 @@
+<div class="login-container">
+    <div class="login-card">
+      <h2>Connexion</h2>
+      
+      <form  (submit)=" submit($event)">
+        <div class="form-group">
+          <label for="username">Nom d'utilisateur ou Email</label>
+          <input 
+            type="text" 
+            id="username" 
+            formControlName="username"
+            placeholder="Entrez votre nom d'utilisateur ou email"
+            [formControl]="userName">
+            @if (hasError("userName")) {
+              <p class="error">{{getMessageError("userName")}}</p>
+            }
+        </div>
+  
+        <div class="form-group">
+          <label for="password">Mot de passe</label>
+          <input 
+            type="password" 
+            id="password" 
+            [formControl]="password"
+            placeholder="Entrez votre mot de passe">
+            @if (hasError("password")) {
+              <p class="error">{{getMessageError("password")}}</p>
+            }
+        </div>
+
+  
+        <div class="remember-me">
+          <input 
+            type="checkbox" 
+            id="rememberMe" 
+            [formControl]="rememberMe">
+          <label for="rememberMe">Se souvenir de moi</label>
+        </div>
+  
+        <button type="submit" class="login-btn">Se connecter</button>
+      </form>
+    </div>
+  </div>

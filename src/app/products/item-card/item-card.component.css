@@ -1,0 +1,90 @@
+.card-act-spaced{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    height: 100%;
+}
+.price{
+    display: flex;
+    font-size: larger;
+    font-style: oblique;
+    justify-content: end;
+    text-align: center;
+    color: black;
+    width: auto;
+    padding-right: 5px;
+}
+.price-in{
+    font-size: larger;
+    font-style: oblique;
+    padding: 5px;
+
+}
+.product-title{
+    font-size: xx-large;
+    margin-top: 8px;
+    font-style: oblique;
+    text-align: center;
+    color: black;
+    width: auto;
+    padding-right: 5px;
+    
+}
+img {
+    width: 100%;  /* Set a fixed width */
+    height: 300px; /* Set a fixed height */
+    object-fit:fill; /* Ensures the image fills the area without distortion */
+  }
+  .custom-card{
+    height: 100%;
+    max-height: 800px;
+  }
+ /* General container styling */
+.quantity-input {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between label and input */
+  }
+  
+  /* Label styling */
+  .quantity-input label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  /* Input field styling */
+  .quantity-input input[type="number"] {
+    width: 60px; /* Adjust width as needed */
+    height: 36px; /* Adjust height as needed */
+    padding: 6px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center; /* Center the number */
+    outline: none; /* Remove focus outline for cleaner look */
+    transition: border-color 0.3s ease;
+  }
+  
+  /* Hover effect */
+  .quantity-input input[type="number"]:hover {
+    border-color: #999;
+  }
+  
+  /* Focus effect */
+  .quantity-input input[type="number"]:focus {
+    border-color: #007bff; /* Change to your brand color */
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5); /* Subtle shadow on focus */
+  }
+  
+  /* Remove default up/down arrows from number input */
+  .quantity-input input[type="number"]::-webkit-inner-spin-button,
+  .quantity-input input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  /* Optional: Add custom up/down buttons if desired */
+  .quantity-input input[type="number"] {
+    appearance: textfield; /* Ensure compatibility */
+  }

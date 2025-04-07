@@ -1,0 +1,29 @@
+.spacer {
+    flex: 1 1 auto;
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 8px; /* Adjust the gap between buttons as needed */
+  }
+  
+  .button-container button {
+    flex: 1;
+    text-transform: none; /* Optional: Keeps the button text case as is */
+  }
+  .nav-in{
+    padding-left: 5%;
+    padding-right: 5%;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: rgba(199, 190, 190, 0.249);
+  }
+  .logo{
+    font-size: xx-large;
+    font-weight: bolder;
+    font-style: italic;
+    background: linear-gradient(45deg, #ff6b6b, #f06595);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  

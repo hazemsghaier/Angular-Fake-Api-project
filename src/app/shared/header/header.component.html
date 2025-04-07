@@ -1,0 +1,17 @@
+<mat-toolbar class="nav-in">
+    
+    <h2 class="logo" (click)="handelLogoClick($event)">shopii</h2>
+    <span class="spacer"></span>
+    <div class="button-container">
+      @if(sharedState.isAuthentificated){
+        <button mat-flat-button routerLink="/">Products</button>
+        <button mat-flat-button routerLink="/card">Cart</button>
+      }@else {
+        <button mat-flat-button routerLink="/login">Login</button>
+        <button mat-flat-button routerLink="/register">Register</button>
+      }
+
+      
+    </div>
+  </mat-toolbar>
+  

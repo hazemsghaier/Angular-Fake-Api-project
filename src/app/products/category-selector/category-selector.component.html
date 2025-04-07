@@ -1,0 +1,9 @@
+<mat-form-field class="spaced">
+    <mat-label>categories</mat-label>
+    <mat-select [value]="sharedState.categoryFilter()" (selectionChange)="selectCategory($event)">
+         @for (item of categories; track $index) {
+            <mat-option [value]="item" >{{item}}</mat-option>
+         }
+    </mat-select>
+</mat-form-field>
+  

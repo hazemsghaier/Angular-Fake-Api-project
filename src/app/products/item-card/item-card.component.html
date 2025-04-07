@@ -1,0 +1,30 @@
+<div  style="height: 100%;">
+  <mat-card class="custom-card" >
+  
+    <img (click)="handelProductClick($event)" mat-card-image src="{{productUnit?.image}}" alt="Product Image">
+    <mat-card-title (click)="handelProductClick($event)" class="product-title">{{productUnit?.title}}</mat-card-title>
+    <mat-card-content>
+      <p>
+        {{productUnit?.description}}
+      </p>
+    </mat-card-content>
+
+    <mat-card-subtitle class="price"><span class="price-in">{{productUnit?.price}}$</span></mat-card-subtitle>
+
+    <mat-card-actions  class="card-act-spaced" >
+      <button mat-flat-button color="accent">Buy Now</button>
+      <div>
+        @if(showCard){
+          <div class="quantity-input">
+            <label for="item-quantity">Quantity:</label>
+            <input type="number" id="item-quantity" name="item-quantity" min="1" value="1" [formControl]="numberOfItemToAdd">
+          </div>        }
+        <button mat-button color="primary" (click)="handelAddTocardClick($event)">Add to card</button>
+      </div>
+      
+      
+    </mat-card-actions>
+  </mat-card>
+  
+</div>
+

@@ -1,0 +1,18 @@
+.main{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 5%;
+    margin-right: 5%;
+    flex-wrap: wrap;
+    gap: 3%;
+}
+.main-conteiner{
+    width: 30%;
+    margin-top: 10%;
+}
+.paggination{
+    display: flex;
+    justify-content: end;
+    margin-left: 5%;
+    margin-right: 5%;
+}
