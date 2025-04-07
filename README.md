@@ -1,6 +1,8 @@
 # Magasin
+## Code devolepement approche :
+In this project, I used Angular 19 for the development process, integrating a public fake API that simulates an API for products, including their details and categories. However, the functionality offered by this fake API is limited, as it lacks advanced filtering capabilities.
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.1.
+One of the missing features is authentication. To address this, I created interceptors in Angular to simulate an authentication response from the server, but with only one active user.
 
 ## Development server
 
